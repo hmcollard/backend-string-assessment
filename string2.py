@@ -41,16 +41,11 @@ def verbing(s):
 
 
 def not_bad(s):
-    if s.find('not'):
-        n = s.index('not')
-
-    if s.find('bad'):
-        b = s.index('bad')
-
+    n = s.find('not')
+    b = s.find('bad')
     if b > n:
         return s[:n] + 'good' + s[b+3:]
-    else:
-        return s
+    return s
 
 
 # F. front_back
